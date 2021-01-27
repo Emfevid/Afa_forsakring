@@ -1,0 +1,61 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "This is the simplest possible API to enable AFA to do Hello World tests through the firewall.\n[http://swagger.io](http://swagger.io) or on \n[irc.freenode.net, #swagger](http://swagger.io/irc/).\n",
+    "version" : "1.0.0",
+    "title" : "Hello World temp",
+    "contact" : {
+      "email" : "Api.management@afaforsakring.se"
+    }
+  },
+  "host" : "pswaggerhub.domain.se",
+  "basePath" : "/virts/Afa_forsakring_Org/HelloWorld/1.0.0",
+  "tags" : [ {
+    "name" : "values",
+    "description" : "Get a response in the form of a pair of \"Hello\" and \"World\"."
+  } ],
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/values" : {
+      "get" : {
+        "tags" : [ "values" ],
+        "summary" : "Fetch an array of strings containing \"Hello\" and \"World\".",
+        "description" : "call this",
+        "operationId" : "getHelloWorldInArray",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Hello World temp"
+          },
+          "default" : {
+            "description" : "Hello World"
+          }
+        }
+      }
+    },
+    "/values/5" : {
+      "get" : {
+        "tags" : [ "values" ],
+        "summary" : "Fetch a complete string \"Hello World\".",
+        "description" : "call this world",
+        "operationId" : "getHelloWorld",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Hello World"
+          },
+          "default" : {
+            "description" : "Hello World"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : { },
+  "externalDocs" : {
+    "description" : "Find out more about AFA",
+    "url" : "http://afaforsakring.se"
+  }
+}
